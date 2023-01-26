@@ -1,0 +1,34 @@
+@use "./variables" as v;
+
+.side-nav h1 {
+  color: v.$white;
+  font-size: 2rem;
+}
+
+.nav {
+  a {
+    margin: 0.75em 0;
+    font-size: 1.15rem;
+    text-decoration: none;
+
+    span {
+      color: v.$gray-2;
+      transition: v.$fast-transition;
+    }
+
+    i {
+      color: v.$gray-2;
+      transition: v.$fast-transition;
+    }
+
+    &:hover {
+      span {
+        color: v.$white;
+      }
+
+      i {
+        color: v.$color-tertiary;
+      }
+    }
+  }
+}

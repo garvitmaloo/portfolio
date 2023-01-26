@@ -6,13 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
-    <!-- Font Awesome styles -->
-    <link
-      rel="stylesheet"
-      href="https://kit.fontawesome.com/e8be5a49bb.css"
-      crossorigin="anonymous"
-    />
-
     <!-- Google fonts import -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,7 +41,74 @@
     <!-- Custom styles -->
     <link rel="stylesheet" href="./Assets/css/styles.css" />
   </head>
+
   <body>
+    <aside class="side-nav pt-3">
+      <div class="img-container center--block">
+        <img src="./Assets/img/profile-image.jpg" alt="Image of the person" />
+      </div>
+
+      <h1 class="text-center my-2">James Smith</h1>
+
+      <div class="socials">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-solid fa-link"></i>
+      </div>
+
+      <nav
+        id="navbar-example3"
+        class="h-100 flex-column align-items-stretch mt-4 ms-2 ps-4 border-end"
+      >
+        <nav class="nav flex-column">
+          <a href="#item-1"
+            ><i class="me-2 fa-solid fa-house"></i> <span> Home</span></a
+          >
+          <a href="#item-2"
+            ><i class="me-2 fa-solid fa-user"></i> <span> About</span></a
+          >
+          <a href="#item-3"
+            ><i class="me-3 fa-solid fa-file"></i><span> Resume</span></a
+          >
+          <a href="#item-3"
+            ><i class="me-2 fa-solid fa-briefcase"></i>
+            <span> Portfolio</span></a
+          >
+          <a href="#item-3"
+            ><i class="me-2 fa-solid fa-laptop"></i><span> Services</span></a
+          >
+          <a href="#item-3"
+            ><i class="me-2 fa-solid fa-envelope"></i> <span> Contact</span></a
+          >
+        </nav>
+      </nav>
+
+      <!-- <ul class="navigation mt-5">
+        <li class="my-3">
+          <a href="#"><i class="me-2 fa-solid fa-house"></i> Home</a>
+        </li>
+        <li class="my-3">
+          <a href="#"><i class="me-2 fa-solid fa-user"></i> About</a>
+        </li>
+        <li class="my-3">
+          <a href="#"><i class="me-3 fa-solid fa-file"></i>Resume</a>
+        </li>
+        <li class="my-3">
+          <a href="#"><i class="me-2 fa-solid fa-briefcase"></i> Portfolio</a>
+        </li>
+        <li class="my-3">
+          <a href="#"><i class="me-2 fa-solid fa-laptop"></i>Services</a>
+        </li>
+        <li class="my-3">
+          <a href="#"><i class="me-2 fa-solid fa-envelope"></i> Contact</a>
+        </li>
+      </ul> -->
+    </aside>
+
+    <main class="main"></main>
+
     <!-- Vendor scripts -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
@@ -69,6 +129,10 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e8be5a49bb.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Custom script -->
     <script src="./Assets/js/main.js"></script>

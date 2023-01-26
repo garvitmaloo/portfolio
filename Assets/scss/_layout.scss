@@ -1,0 +1,46 @@
+@use "./variables" as v;
+
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 20rem;
+  background-color: v.$black;
+
+  .img-container {
+    width: min-content;
+    padding: 0.5em;
+    background-color: v.$black--light;
+    border-radius: 50%;
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+  }
+
+  .socials {
+    text-align: center;
+    padding-top: 0.5em;
+
+    i {
+      color: v.$white;
+      padding: 0.75em;
+      margin: 0 0.15em;
+      background-color: v.$black--light;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: v.$fast-transition;
+
+      &:hover {
+        background-color: v.$color-tertiary;
+      }
+    }
+  }
+}
+
+.main {
+  margin-left: 20rem;
+}
