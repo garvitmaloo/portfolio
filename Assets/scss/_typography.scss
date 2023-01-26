@@ -66,3 +66,41 @@
     }
   }
 }
+
+.section-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  position: relative;
+  color: v.$color-primary;
+  margin-bottom: 1.5em;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 3px;
+    width: 3rem;
+    background-color: v.$color-tertiary;
+  }
+}
+
+.content-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: v.$color-primary;
+  margin-bottom: 1em;
+}
+
+.detail {
+  i {
+    color: v.$color-tertiary;
+  }
+}
+
+.fact-card {
+  i {
+    font-size: 2.5rem;
+    color: v.$color-tertiary;
+  }
+}

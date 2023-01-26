@@ -30,6 +30,10 @@ label {
   margin: 0 auto;
 }
 
+.sections {
+  padding: 3em 1em;
+}
+
 .side-nav h1 {
   color: rgb(245, 245, 245);
   font-size: 2rem;
@@ -84,6 +88,39 @@ label {
   border-bottom: 3px solid #e9c46a;
 }
 
+.section-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  position: relative;
+  color: #264653;
+  margin-bottom: 1.5em;
+}
+.section-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 3px;
+  width: 3rem;
+  background-color: #25c2db;
+}
+
+.content-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #264653;
+  margin-bottom: 1em;
+}
+
+.detail i {
+  color: #25c2db;
+}
+
+.fact-card i {
+  font-size: 2.5rem;
+  color: #25c2db;
+}
+
 .side-nav {
   position: fixed;
   top: 0;
@@ -131,6 +168,11 @@ label {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+.about .contents img {
+  width: 25rem;
+  height: 25rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
