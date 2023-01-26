@@ -106,6 +106,7 @@ label {
 }
 
 .content-heading {
+  position: relative;
   font-size: 1.5rem;
   font-weight: 600;
   color: #264653;
@@ -119,6 +120,27 @@ label {
 .fact-card i {
   font-size: 2.5rem;
   color: #25c2db;
+}
+
+.resume-card .content-heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -36px;
+  height: 24px;
+  width: 24px;
+  border: 2px solid #25c2db;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.resume-card .time {
+  padding: 0.25em 1em;
+  background-color: rgba(233, 197, 106, 0.6862745098);
+}
+
+.resume-card li {
+  margin: 0.75em 0;
 }
 
 .side-nav {
@@ -192,6 +214,10 @@ label {
   border-radius: 5px;
   background-color: #25c2db;
   transition: all 200ms ease-in-out;
+}
+
+.resume-card {
+  border-left: 2px solid #25c2db;
 }
 
 /*# sourceMappingURL=styles.css.map */

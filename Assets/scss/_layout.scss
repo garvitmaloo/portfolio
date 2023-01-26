@@ -90,3 +90,9 @@
     }
   }
 }
+
+.resume {
+  &-card {
+    border-left: 2px solid v.$color-tertiary;
+  }
+}
