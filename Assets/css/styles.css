@@ -130,6 +130,7 @@ label {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.65)), url(../img/banner-image.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 /*# sourceMappingURL=styles.css.map */
