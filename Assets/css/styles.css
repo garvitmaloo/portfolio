@@ -163,7 +163,7 @@ label {
   overflow-y: auto;
 }
 .main .hero {
-  min-height: 100vh;
+  height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.65)), url(../img/banner-image.jpg);
   background-size: cover;
   background-position: center;
@@ -173,6 +173,25 @@ label {
 .about .contents img {
   width: 25rem;
   height: 25rem;
+}
+.about .skills {
+  background-color: rgba(37, 195, 219, 0.0745098039);
+  margin: 0 -1em;
+  padding: 3em 1em;
+}
+.about .skills .total {
+  height: 10px;
+  background-color: rgba(12, 59, 66, 0.2274509804);
+  border-radius: 5px;
+}
+.about .skills .total .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #25c2db;
+  transition: all 200ms ease-in-out;
 }
 
 /*# sourceMappingURL=styles.css.map */

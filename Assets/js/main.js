@@ -6,3 +6,9 @@ new Typed(".dynamic-type", {
   backSpeed: 40,
   backDelay: 2000,
 });
+
+// Making the skills progress bar work
+const allSkills = document.querySelectorAll(".progress");
+allSkills.forEach((skill) => {
+  skill.style.width = `${skill.attributes.width.value}%`;
+});
