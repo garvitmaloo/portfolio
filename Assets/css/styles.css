@@ -10,7 +10,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 p,
@@ -47,11 +48,40 @@ label {
   color: rgb(180, 180, 180);
   transition: all 200ms ease-in-out;
 }
-.nav a:hover span {
+.nav a:hover span, .nav a.active span {
   color: rgb(245, 245, 245);
 }
-.nav a:hover i {
-  color: #25c2db;
+.nav a:hover i, .nav a.active i {
+  color: #e9c46a;
+}
+
+.text-hero {
+  margin-left: 10em;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(245, 245, 245);
+}
+.text-hero h1 {
+  display: block;
+  font-style: italic;
+  font-size: 3.2rem;
+}
+.text-hero h2 {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: rgb(215, 215, 215);
+}
+.text-hero p {
+  font-size: 1.8rem;
+  margin-top: 0.65em;
+  color: rgb(215, 215, 215);
+}
+.text-hero p .dynamic-type {
+  padding-bottom: 0.5em;
+  border-bottom: 3px solid #e9c46a;
 }
 
 .side-nav {
@@ -87,11 +117,19 @@ label {
   transition: all 200ms ease-in-out;
 }
 .side-nav .socials i:hover {
-  background-color: #25c2db;
+  color: rgb(17, 17, 17);
+  background-color: #e9c46a;
 }
 
 .main {
   margin-left: 20rem;
+  overflow-y: auto;
+}
+.main .hero {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.65)), url(../img/banner-image.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
@@ -58,12 +58,9 @@
         <i class="fa-solid fa-link"></i>
       </div>
 
-      <nav
-        id="navbar-example3"
-        class="h-100 flex-column align-items-stretch mt-4 ms-2 ps-4 border-end"
-      >
+      <nav id="side-nav" class="flex-column align-items-stretch mt-4 ms-2 ps-4">
         <nav class="nav flex-column">
-          <a href="#item-1"
+          <a href="#hero"
             ><i class="me-2 fa-solid fa-house"></i> <span> Home</span></a
           >
           <a href="#item-2"
@@ -107,7 +104,21 @@
       </ul> -->
     </aside>
 
-    <main class="main"></main>
+    <main
+      class="main"
+      data-bs-spy="scroll"
+      data-bs-target="#side-nav"
+      data-bs-smooth-scroll="true"
+      tabindex="0"
+    >
+      <section class="hero" id="hero">
+        <div class="text-hero">
+          <h2>Hi! I am</h2>
+          <h1>James Smith</h1>
+          <p>A <span class="dynamic-type"></span></p>
+        </div>
+      </section>
+    </main>
 
     <!-- Vendor scripts -->
     <script

@@ -21,14 +21,48 @@
       transition: v.$fast-transition;
     }
 
-    &:hover {
+    &:hover,
+    &.active {
       span {
         color: v.$white;
       }
 
       i {
-        color: v.$color-tertiary;
+        color: v.$color-secondary;
       }
+    }
+  }
+}
+
+.text-hero {
+  margin-left: 10em;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: v.$white;
+
+  h1 {
+    display: block;
+    font-style: italic;
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: v.$gray-3;
+  }
+
+  p {
+    font-size: 1.8rem;
+    margin-top: 0.65em;
+    color: v.$gray-3;
+
+    .dynamic-type {
+      padding-bottom: 0.5em;
+      border-bottom: 3px solid v.$color-secondary;
     }
   }
 }
