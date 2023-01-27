@@ -264,4 +264,35 @@ label {
   opacity: 1;
 }
 
+.services-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.5em;
+}
+.services-box .service-card {
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+}
+.services-box .service-card .icon {
+  height: 4rem;
+  width: 8rem;
+  border-radius: 50%;
+  box-shadow: 0 0 5px -1px rgb(180, 180, 180);
+  position: relative;
+}
+.services-box .service-card .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+.services-box .service-card:hover {
+  border: 2px solid #264653;
+}
+
 /*# sourceMappingURL=styles.css.map */
